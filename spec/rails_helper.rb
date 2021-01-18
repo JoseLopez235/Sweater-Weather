@@ -73,3 +73,10 @@ VCR.configure do |config|
   config.configure_rspec_metadata!
   config.filter_sensitive_data('<dont_expose_data>') { ENV["MOVIE_API_KEY"] }
 end
+
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
+  end
+end
