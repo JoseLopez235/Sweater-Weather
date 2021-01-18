@@ -14,7 +14,7 @@ gem 'puma', '~> 3.11'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -49,6 +49,7 @@ end
 group :test do
   gem 'vcr'
   gem 'webmock'
+  gem 'shoulda-matchers'
 end 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
