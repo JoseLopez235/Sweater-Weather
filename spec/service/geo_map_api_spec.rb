@@ -10,5 +10,20 @@ RSpec.describe GeoMapApi do
         expect(location[:lng]).to be_a(Float)
       end
     end
+
+    it "gets the real time to travel" do
+      VCR.use_cassette("road_trip") do
+        location = GeoMapApi.travel("denver,co", "Estes Park, CO")
+        expect(location[:route][:realTime]).to be_a_kind_of(Numeric)
+      end
+    end
+
+    it "returns error if travel is impossible" do
+      VCR.use_cassette("impossible_road_trip") do
+        location = GeoMapApi.travel("denver,co", "japan")
+
+        expect(location[:info][:messages][0]).to eq("We are unable to route with the given locations.")
+      end
+    end
   end
 end
