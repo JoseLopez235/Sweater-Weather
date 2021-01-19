@@ -7,6 +7,14 @@ class GeoMapApi
     coords[:results][0][:locations][0][:latLng]
   end
   
+  def self.travel(start_city, end_city)
+    response = conn.get("/directions/v2/route?") do |req|
+      req.params[:from] = start_city
+      req.params[:to] = end_city
+    end
+    JSON.parse(response.body, symbolize_names: true)
+  end
+  
   private
   def self.conn
     Faraday.new("http://www.mapquestapi.com") do |f|
