@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe MunchiesSearchFacade do
   it "munchie data" do
-    VCR.use_cassette('mucnhies') do
+    VCR.use_cassette('facade_mucnhies') do
       start_city = "denver,co"
       end_city = "Pueblo, CO"
       food = "chinese"

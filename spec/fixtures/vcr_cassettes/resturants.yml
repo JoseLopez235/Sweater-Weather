@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.yelp.com/v3/businesses/search?location=Pueblo,%20CO&term=chinese
+    uri: https://api.yelp.com/v3/businesses/search?location=Pueblo,%20CO&open_at=1611095580&term=chinese
     body:
       encoding: US-ASCII
       string: ''
@@ -27,31 +27,31 @@ http_interactions:
       Ratelimit-Dailylimit:
       - '5000'
       Ratelimit-Remaining:
-      - '4996'
+      - '4972'
       X-Zipkin-Id:
-      - d591da8c6884fbde
+      - 3640f95be68b0c64
       Server:
       - envoy
       Ratelimit-Resettime:
       - '2021-01-20T00:00:00+00:00'
       X-Routing-Service:
-      - routing-main--useast1-5bc6d6966-dfhr4; site=public_api_v3
+      - routing-main--useast1-5bc6d6966-fq2cc; site=public_api_v3
       X-B3-Sampled:
       - '0'
       X-Proxied:
-      - 10-65-190-220-useast1bprod
+      - 10-65-147-6-useast1bprod
       X-Extlb:
-      - 10-65-190-220-useast1bprod
+      - 10-65-147-6-useast1bprod
       Cache-Control:
       - max-age=0, must-revalidate, no-cache, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 19 Jan 2021 16:37:31 GMT
+      - Tue, 19 Jan 2021 17:52:21 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-mia11376-MIA
+      - cache-mia11363-MIA
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -100,25 +100,7 @@ http_interactions:
         "750 Desert Flower Blvd", "address2": "", "address3": "", "city": "Pueblo",
         "zip_code": "81001", "country": "US", "state": "CO", "display_address": ["750
         Desert Flower Blvd", "Pueblo, CO 81001"]}, "phone": "+17195830888", "display_phone":
-        "(719) 583-0888", "distance": 4814.277659769904}, {"id": "QiLNSYfYkjBbvU4ejYTKvg",
-        "alias": "chongs-cafe-pueblo", "name": "Chong''s Cafe", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/GVUzMIbz54KY5TDKULXKbQ/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/chongs-cafe-pueblo?adjust_creative=x0Bl030ru4Kjzw_5ZqUtTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=x0Bl030ru4Kjzw_5ZqUtTg",
-        "review_count": 7, "categories": [{"alias": "chinese", "title": "Chinese"}],
-        "rating": 3.5, "coordinates": {"latitude": 38.279228, "longitude": -104.609039},
-        "transactions": [], "location": {"address1": "1301 N Main St", "address2":
-        "", "address3": "", "city": "Pueblo", "zip_code": "81003", "country": "US",
-        "state": "CO", "display_address": ["1301 N Main St", "Pueblo, CO 81003"]},
-        "phone": "", "display_phone": "", "distance": 3266.7357956884225}, {"id":
-        "LRzlrS7no7wlYKqFV_3RZg", "alias": "pueblo-dragon-pueblo", "name": "Pueblo
-        Dragon", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/KMlAogU7BpAU9gth0P2Ilg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/pueblo-dragon-pueblo?adjust_creative=x0Bl030ru4Kjzw_5ZqUtTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=x0Bl030ru4Kjzw_5ZqUtTg",
-        "review_count": 36, "categories": [{"alias": "chinese", "title": "Chinese"}],
-        "rating": 3.5, "coordinates": {"latitude": 38.2349771, "longitude": -104.662556},
-        "transactions": ["delivery"], "price": "$$", "location": {"address1": "1867
-        S Pueblo Blvd", "address2": "", "address3": "", "city": "Pueblo", "zip_code":
-        "81005", "country": "US", "state": "CO", "display_address": ["1867 S Pueblo
-        Blvd", "Pueblo, CO 81005"]}, "phone": "+17195619202", "display_phone": "(719)
-        561-9202", "distance": 8880.223104658355}, {"id": "P1nNU18FWCEmkR0CfHSF7Q",
+        "(719) 583-0888", "distance": 4814.277659769904}, {"id": "P1nNU18FWCEmkR0CfHSF7Q",
         "alias": "black-swan-cafe-pueblo", "name": "Black Swan Cafe", "image_url":
         "https://s3-media3.fl.yelpcdn.com/bphoto/3_0MBKLUL76zltPUwntKIg/o.jpg", "is_closed":
         false, "url": "https://www.yelp.com/biz/black-swan-cafe-pueblo?adjust_creative=x0Bl030ru4Kjzw_5ZqUtTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=x0Bl030ru4Kjzw_5ZqUtTg",
@@ -134,7 +116,7 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/tea-palace-ii-pueblo?adjust_creative=x0Bl030ru4Kjzw_5ZqUtTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=x0Bl030ru4Kjzw_5ZqUtTg",
         "review_count": 17, "categories": [{"alias": "chinese", "title": "Chinese"}],
         "rating": 3.5, "coordinates": {"latitude": 38.267707824707, "longitude": -104.62508392334},
-        "transactions": ["delivery", "pickup"], "price": "$", "location": {"address1":
+        "transactions": ["pickup", "delivery"], "price": "$", "location": {"address1":
         "1212 W 4th St", "address2": "", "address3": "", "city": "Pueblo", "zip_code":
         "81004", "country": "US", "state": "CO", "display_address": ["1212 W 4th St",
         "Pueblo, CO 81004"]}, "phone": "+17195460099", "display_phone": "(719) 546-0099",
@@ -166,22 +148,14 @@ http_interactions:
         W US Hwy 50", "address2": "", "address3": "", "city": "Pueblo", "zip_code":
         "81008", "country": "US", "state": "CO", "display_address": ["1617 W US Hwy
         50", "Pueblo, CO 81008"]}, "phone": "+17195454141", "display_phone": "(719)
-        545-4141", "distance": 6624.026295255045}, {"id": "Pv_yWIz8w7GQJ5phv263tQ",
-        "alias": "china-pantries-pueblo", "name": "China Pantries", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/D6LYOhSCyGeDJh1PYibmKg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/china-pantries-pueblo?adjust_creative=x0Bl030ru4Kjzw_5ZqUtTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=x0Bl030ru4Kjzw_5ZqUtTg",
-        "review_count": 3, "categories": [{"alias": "chinese", "title": "Chinese"}],
-        "rating": 3.5, "coordinates": {"latitude": 38.303004, "longitude": -104.609257},
-        "transactions": ["delivery"], "location": {"address1": "3429 Dillon Dr Ofc",
-        "address2": "", "address3": "", "city": "Pueblo", "zip_code": "81008", "country":
-        "US", "state": "CO", "display_address": ["3429 Dillon Dr Ofc", "Pueblo, CO
-        81008"]}, "phone": "+17195830882", "display_phone": "(719) 583-0882", "distance":
-        4795.393160223319}, {"id": "AvI8d7y-xBUAUowQsVrg0g", "alias": "asian-tropix-fusion-pueblo-west",
-        "name": "Asian Tropix Fusion", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/K74PX3E3KtKZSOnaYOGcvQ/o.jpg",
+        545-4141", "distance": 6624.026295255045}, {"id": "AvI8d7y-xBUAUowQsVrg0g",
+        "alias": "asian-tropix-fusion-pueblo-west", "name": "Asian Tropix Fusion",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/K74PX3E3KtKZSOnaYOGcvQ/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/asian-tropix-fusion-pueblo-west?adjust_creative=x0Bl030ru4Kjzw_5ZqUtTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=x0Bl030ru4Kjzw_5ZqUtTg",
         "review_count": 27, "categories": [{"alias": "hawaiian", "title": "Hawaiian"},
         {"alias": "asianfusion", "title": "Asian Fusion"}, {"alias": "bbq", "title":
         "Barbeque"}], "rating": 4.5, "coordinates": {"latitude": 38.3208058831895,
-        "longitude": -104.703300995953}, "transactions": ["delivery", "pickup"], "location":
+        "longitude": -104.703300995953}, "transactions": ["pickup", "delivery"], "location":
         {"address1": "198 S Purcell Blvd", "address2": "", "address3": null, "city":
         "Pueblo West", "zip_code": "81007", "country": "US", "state": "CO", "display_address":
         ["198 S Purcell Blvd", "Pueblo West, CO 81007"]}, "phone": "+17192813795",
@@ -191,7 +165,7 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/pueblo-dragon-2-pueblo?adjust_creative=x0Bl030ru4Kjzw_5ZqUtTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=x0Bl030ru4Kjzw_5ZqUtTg",
         "review_count": 9, "categories": [{"alias": "chinese", "title": "Chinese"}],
         "rating": 2.5, "coordinates": {"latitude": 38.24486, "longitude": -104.5646},
-        "transactions": ["delivery", "pickup"], "location": {"address1": "2648 Santa
+        "transactions": ["pickup", "delivery"], "location": {"address1": "2648 Santa
         Fe Dr", "address2": "Ste 9", "address3": null, "city": "Pueblo", "zip_code":
         "81006", "country": "US", "state": "CO", "display_address": ["2648 Santa Fe
         Dr", "Ste 9", "Pueblo, CO 81006"]}, "phone": "+17195443008", "display_phone":
@@ -201,52 +175,23 @@ http_interactions:
         false, "url": "https://www.yelp.com/biz/mongolian-grill-pueblo?adjust_creative=x0Bl030ru4Kjzw_5ZqUtTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=x0Bl030ru4Kjzw_5ZqUtTg",
         "review_count": 18, "categories": [{"alias": "asianfusion", "title": "Asian
         Fusion"}], "rating": 3.0, "coordinates": {"latitude": 38.2980418, "longitude":
-        -104.6076509}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        -104.6076509}, "transactions": ["pickup", "delivery"], "price": "$$", "location":
         {"address1": "164 W 29th St", "address2": null, "address3": null, "city":
         "Pueblo", "zip_code": "81008", "country": "US", "state": "CO", "display_address":
         ["164 W 29th St", "Pueblo, CO 81008"]}, "phone": "+17195434526", "display_phone":
-        "(719) 543-4526", "distance": 4273.643929950528}, {"id": "vGpxxQ2dFiaWgcaq8bCteA",
-        "alias": "china-moon-pueblo", "name": "China Moon", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/6XpQlGQ6rQ-oEVxe0AIbWw/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/china-moon-pueblo?adjust_creative=x0Bl030ru4Kjzw_5ZqUtTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=x0Bl030ru4Kjzw_5ZqUtTg",
-        "review_count": 13, "categories": [{"alias": "chinese", "title": "Chinese"}],
-        "rating": 2.5, "coordinates": {"latitude": 38.2894119, "longitude": -104.5936442},
-        "transactions": ["delivery"], "price": "$$", "location": {"address1": "1016
-        Constitution Rd", "address2": "", "address3": "", "city": "Pueblo", "zip_code":
-        "81001", "country": "US", "state": "CO", "display_address": ["1016 Constitution
-        Rd", "Pueblo, CO 81001"]}, "phone": "+17195462675", "display_phone": "(719)
-        546-2675", "distance": 2740.3969300023996}, {"id": "wKb2ITmSRYN6I7Py14YPUA",
+        "(719) 543-4526", "distance": 4273.643929950528}, {"id": "wKb2ITmSRYN6I7Py14YPUA",
         "alias": "panda-express-pueblo", "name": "Panda Express", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/flMZtkgOQwQtW5R4Iimg6w/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/panda-express-pueblo?adjust_creative=x0Bl030ru4Kjzw_5ZqUtTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=x0Bl030ru4Kjzw_5ZqUtTg",
         "review_count": 23, "categories": [{"alias": "chinese", "title": "Chinese"},
         {"alias": "hotdogs", "title": "Fast Food"}], "rating": 2.0, "coordinates":
-        {"latitude": 38.2325574, "longitude": -104.6628568}, "transactions": ["delivery",
-        "pickup"], "price": "$$", "location": {"address1": "2001 S Pueblo Blvd", "address2":
-        "", "address3": "", "city": "Pueblo", "zip_code": "81005", "country": "US",
-        "state": "CO", "display_address": ["2001 S Pueblo Blvd", "Pueblo, CO 81005"]},
-        "phone": "+17195649000", "display_phone": "(719) 564-9000", "distance": 8872.987172857325},
-        {"id": "a4spR5uKp5QzRUExexIDsg", "alias": "asian-garden-pueblo-west", "name":
-        "Asian Garden", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ixT4M99dC-fMewr7NbrYcA/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/asian-garden-pueblo-west?adjust_creative=x0Bl030ru4Kjzw_5ZqUtTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=x0Bl030ru4Kjzw_5ZqUtTg",
-        "review_count": 43, "categories": [{"alias": "chinese", "title": "Chinese"},
-        {"alias": "buffets", "title": "Buffets"}, {"alias": "seafood", "title": "Seafood"}],
-        "rating": 3.0, "coordinates": {"latitude": 38.3391148483116, "longitude":
-        -104.740540981293}, "transactions": ["delivery", "pickup"], "price": "$$",
-        "location": {"address1": "74 Component Dr", "address2": "Ste 150", "address3":
-        "", "city": "Pueblo West", "zip_code": "81007", "country": "US", "state":
-        "CO", "display_address": ["74 Component Dr", "Ste 150", "Pueblo West, CO 81007"]},
-        "phone": "+17195474699", "display_phone": "(719) 547-4699", "distance": 16469.79678649975},
-        {"id": "9i0PfL-zbQTNBwLQ0ghEuw", "alias": "chong-kitchen-pueblo", "name":
-        "Chong Kitchen", "image_url": "", "is_closed": false, "url": "https://www.yelp.com/biz/chong-kitchen-pueblo?adjust_creative=x0Bl030ru4Kjzw_5ZqUtTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=x0Bl030ru4Kjzw_5ZqUtTg",
-        "review_count": 2, "categories": [{"alias": "chinese", "title": "Chinese"}],
-        "rating": 3.0, "coordinates": {"latitude": 38.2792358398438, "longitude":
-        -104.609046936035}, "transactions": ["delivery"], "location": {"address1":
-        "1301 N Main St", "address2": "", "address3": "", "city": "Pueblo", "zip_code":
-        "81003", "country": "US", "state": "CO", "display_address": ["1301 N Main
-        St", "Pueblo, CO 81003"]}, "phone": "+17192531985", "display_phone": "(719)
-        253-1985", "distance": 3260.634561047277}, {"id": "3MONRi6Bh5gO1s_4nCaMYQ",
-        "alias": "noodles-and-company-pueblo", "name": "Noodles & Company", "image_url":
-        "https://s3-media2.fl.yelpcdn.com/bphoto/BX4n89hTu90OSoEDWF_mxA/o.jpg", "is_closed":
-        false, "url": "https://www.yelp.com/biz/noodles-and-company-pueblo?adjust_creative=x0Bl030ru4Kjzw_5ZqUtTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=x0Bl030ru4Kjzw_5ZqUtTg",
+        {"latitude": 38.2325574, "longitude": -104.6628568}, "transactions": ["pickup",
+        "delivery"], "price": "$$", "location": {"address1": "2001 S Pueblo Blvd",
+        "address2": "", "address3": "", "city": "Pueblo", "zip_code": "81005", "country":
+        "US", "state": "CO", "display_address": ["2001 S Pueblo Blvd", "Pueblo, CO
+        81005"]}, "phone": "+17195649000", "display_phone": "(719) 564-9000", "distance":
+        8872.987172857325}, {"id": "3MONRi6Bh5gO1s_4nCaMYQ", "alias": "noodles-and-company-pueblo",
+        "name": "Noodles & Company", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/BX4n89hTu90OSoEDWF_mxA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/noodles-and-company-pueblo?adjust_creative=x0Bl030ru4Kjzw_5ZqUtTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=x0Bl030ru4Kjzw_5ZqUtTg",
         "review_count": 33, "categories": [{"alias": "noodles", "title": "Noodles"},
         {"alias": "salad", "title": "Salad"}, {"alias": "pastashops", "title": "Pasta
         Shops"}], "rating": 3.5, "coordinates": {"latitude": 38.3085380973858, "longitude":
@@ -254,7 +199,7 @@ http_interactions:
         "825 W US Hwy 50", "address2": "", "address3": "", "city": "Pueblo", "zip_code":
         "81008", "country": "US", "state": "CO", "display_address": ["825 W US Hwy
         50", "Pueblo, CO 81008"]}, "phone": "+17195441539", "display_phone": "(719)
-        544-1539", "distance": 5846.41953186027}], "total": 20, "region": {"center":
+        544-1539", "distance": 5846.41953186027}], "total": 14, "region": {"center":
         {"longitude": -104.5733642578125, "latitude": 38.27035217485165}}}'
-  recorded_at: Tue, 19 Jan 2021 16:37:31 GMT
+  recorded_at: Tue, 19 Jan 2021 17:52:21 GMT
 recorded_with: VCR 6.0.0
