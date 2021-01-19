@@ -44,11 +44,11 @@ We also use `PostgreSQL` as our database.
 2. Verify your machine has the correct version of Rails installed (5.2.4.3).  You can check this by entering `rails -v` from the command line.
     - To install, enter `gem install rails -v 5.2.3` from the command line.
     
-3. Sign in to get [MapQuest’s Geocoding API](https://developer.mapquest.com/documentation/geocoding-api/)
+3. Sign in to get [MapQuest’s Geocoding API](https://developer.mapquest.com/documentation/geocoding-api/) key
 
-4. Sign in to get [OpenWeather One Call API](https://openweathermap.org/api/one-call-api)
+4. Sign in to get [OpenWeather One Call API](https://openweathermap.org/api/one-call-api) key
 
-5. Sign in to get [OpenWeather One Call API](https://www.pexels.com/api/)
+5. Sign in to get [OpenWeather One Call API](https://www.pexels.com/api/) key
 
 ##### Local Repo Setup
 1. Fork & Clone Repo
