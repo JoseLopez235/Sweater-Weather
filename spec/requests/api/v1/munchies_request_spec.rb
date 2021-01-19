@@ -9,17 +9,16 @@ describe "munchies" do
       food = "chinese"
   
 
-      get "/api/v1/munchies?start=#{origin}&end=#{destination}&food=#{food}"
+      get "/api/v1/munchies?start=#{origin}&destination=#{destination}&food=#{food}"
 
       expect(response).to be_successful
-
       munchies = JSON.parse(response.body, symbolize_names: true)
 
       expect(munchies).to be_a(Hash)
-      expect(munchies[:data]).to eq(nil)
-      expect(munchies[:type]).to eq(munchie)
+      expect(munchies[:data][:id]).to eq(nil)
+      expect(munchies[:data][:type]).to eq("munchie")
       expect(munchies[:data][:attributes]).to be_a(Hash)
-      expect(munchies[:data][:attributes][destination_city]).to eq(destination)
+      expect(munchies[:data][:attributes][:destination_city]).to eq(destination)
       expect(munchies[:data][:attributes][:travel_time]).to be_a(String)
       expect(munchies[:data][:attributes][:forecast]).to be_a(Hash)
       expect(munchies[:data][:attributes][:forecast][:summary]).to be_a(String)
