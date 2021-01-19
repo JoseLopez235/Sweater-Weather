@@ -22,8 +22,6 @@ Sweather Weather, is an app that allows you to look up information for a trip yo
   - [Design](#design)
   - [Setup](#setup)
   - [Running the Tests](#running-the-tests)
-  - [Deployment](#deployment)
-  - [Authors](#authors)
 
 ### Design
   * This project is calling 3 diffrent Api's which are the MapQuest’s Geocoding API , OpenWeather One Call API, Pexels API, to allow us to give you all the information you need in order to give you information about the trip you will take. 
