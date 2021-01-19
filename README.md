@@ -66,8 +66,9 @@ IMAGE_API_KEY: < Add your pixels api key >
 From the command line, within the project's directory, run `bundle exec rspec`.  You should see all passing tests.
 
 
+## All request that you can make: 
 
-### Forcast Requests:
+#### Forcast Requests:
 ```
 GET '/api/v1/forecast'
 ```
