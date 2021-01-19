@@ -48,7 +48,7 @@ We also use `PostgreSQL` as our database.
 
 4. Sign in to get [OpenWeather One Call API](https://openweathermap.org/api/one-call-api) key
 
-5. Sign in to get [Pixels API](https://www.pexels.com/api/) key
+5. Sign in to get [Pexels API](https://www.pexels.com/api/) key
 
 ##### Local Repo Setup
 1. Fork & Clone Repo
