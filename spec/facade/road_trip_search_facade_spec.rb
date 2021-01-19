@@ -9,23 +9,9 @@ RSpec.describe RoadTripSearchFacade do
           end_city = "Estes Park, CO"
           facade = RoadTripSearchFacade.road_trip(start_city, end_city)
 
-          expect(facade.end_city).to eq(end_city)
-          expect(facade.start_city).to eq(start_city)
-          expect(facade.travel_time).to be_a(String)
-          expect(facade.weather_at_eta).to be_a(Hash)
+          expect(facade).to be_a(RoadTrip)
         end
       end
-    end
-  end
-
-  it "should return error if route is impossible" do
-    VCR.use_cassette('impossible_road_trip_japan') do
-      start_city = "Denver, CO"
-      end_city = "japan"
-      facade = RoadTripSearchFacade.road_trip(start_city, end_city)
-
-      expect(facade.travel_time).to eq("Impossible Route")
-      expect(facade.weather_at_eta).to eq({})
     end
   end
 end
