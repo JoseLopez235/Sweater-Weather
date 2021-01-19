@@ -8,7 +8,10 @@ RSpec.describe MunchiesSearchFacade do
       food = "chinese"
       facade = MunchiesSearchFacade.find_munchies(start_city, end_city, food)
 
-      binding.pry
+      expect(facade.destination_city).to eq(end_city)
+      expect(facade.forecast).to be_a(Hash)
+      expect(facade.resturant).to be_a(Hash)
+      expect(facade.travel_time).to be_a(String)
     end
   end
 end
