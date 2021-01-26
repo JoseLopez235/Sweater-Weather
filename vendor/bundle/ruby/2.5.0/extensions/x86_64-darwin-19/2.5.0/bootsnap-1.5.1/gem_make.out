@@ -1,0 +1,15 @@
+current directory: /Users/joselopez/Desktop/Mod3/sweater_weather/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.5.1/ext/bootsnap
+/Users/joselopez/.rvm/rubies/ruby-2.5.3/bin/ruby -I /Users/joselopez/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0 -r ./siteconf20210126-13877-1a50vbw.rb extconf.rb
+creating Makefile
+
+current directory: /Users/joselopez/Desktop/Mod3/sweater_weather/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.5.1/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /Users/joselopez/Desktop/Mod3/sweater_weather/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.5.1/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/joselopez/Desktop/Mod3/sweater_weather/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.5.1/ext/bootsnap
+make DESTDIR\= install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20210126-13877-e6lcmf/bootsnap
