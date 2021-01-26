@@ -1,0 +1,15 @@
+current directory: /Users/joselopez/Desktop/Mod3/sweater_weather/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+/Users/joselopez/.rvm/rubies/ruby-2.5.3/bin/ruby -I /Users/joselopez/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0 -r ./siteconf20210126-13877-2cc51c.rb extconf.rb
+creating Makefile
+
+current directory: /Users/joselopez/Desktop/Mod3/sweater_weather/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make DESTDIR\= clean
+
+current directory: /Users/joselopez/Desktop/Mod3/sweater_weather/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make DESTDIR\=
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/joselopez/Desktop/Mod3/sweater_weather/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make DESTDIR\= install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20210126-13877-1jz5obj
