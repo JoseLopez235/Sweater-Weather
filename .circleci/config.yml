@@ -7,7 +7,7 @@ jobs:
     docker:
     - image: circleci/ruby:2.5.3-node
       environment:
-        BUNDLER_VERSION: 2.0.1
+        BUNDLER_VERSION: 2.1.4
     executor: ruby/default
     steps:
       - checkout
